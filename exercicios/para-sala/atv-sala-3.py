@@ -1,5 +1,5 @@
 #Aluna: Karine Lessa
-#Dia: 15/16/2024
+#Dia: 15/06/2024
 
 
 # Faça um programa que peça para o usuário inserir uma idade e mostre na tela se ele é maior de idade ou não.
@@ -76,5 +76,5 @@ escolha = int(input("Digite o número da sua bebida favorita:"))
 if escolha in bebidas:
     print(f"Que delícia, eu também amo essa! {bebidas[escolha]} é ótimo")
 else:
-    print("Essa opção não está disponível")
+    print("Essa opção não está disponível, tente novamente!")
 
