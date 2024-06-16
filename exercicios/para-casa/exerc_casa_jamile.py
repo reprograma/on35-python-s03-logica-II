@@ -1,10 +1,11 @@
-#Exercício: grupo 1
+# Exercício: grupo 1
 
 # ---------------------------------------------------------------------------------------------------------
 # Escreva um programa que, dados dois numeros inteiros, mostre na tela o maior deles, assim como a diferença existente entre ambos.
 # ---------------------------------------------------------------------------------------------------------
 
-#Opção 1
+# Opção 1
+
 try:
   numero1 = int(input('Digite um Número: '))
   numero2 = int(input('Digite Outro Número: '))
@@ -24,7 +25,7 @@ try:
 except:
   print('Por favor, digite um número inteiro!')
 
-#Opção 2
+# Opção 2
 
 def maior_e_diferenca(num1, num2):
     resultado_maior = num1 > num2
@@ -54,7 +55,7 @@ solicitar_numeros()
 # Faça um programa que receba dois numeros e mostre o maior. Se por acaso, os dois números forem iguais, imprima a mensagem "Números iguais".
 # ---------------------------------------------------------------------------------------------------------
 
-#Opção 1
+# Opção 1
 try:
   numero1 = int(input('Digite um Número: '))
   numero2 = int(input('Digite Outro Número: '))
@@ -68,7 +69,7 @@ try:
 except:
   print('Por favor, digite um número inteiro!')
 
-#Opção 2
+# Opção 2
 def maior_igual(numero1, numero2):
   if numero1 > numero2:
     print(f'Entre {numero1} e o {numero2}, o {numero1} é o maior!')
@@ -91,7 +92,7 @@ digitar_numeros()
 # Escreva um programa que leia um inteiro entre 1 e 7 e imprima o dia da semana correspondente a este número. Isto é, domingo se 1, segunda-feira se 2, e assim por diante.
 # ---------------------------------------------------------------------------------------------------------
 
-#Opção 1
+# Opção 1
 try:
   print('--------Dia da Semana--------')
 
@@ -117,7 +118,7 @@ try:
 except:
   print('Por favor, digite um número inteiro entre 1 e 7!')
   
-#Opção 2
+# Opção 2
 
 def digite_dia(dia_da_semana):
   if dia_da_semana >= 1 and dia_da_semana <= 7:
@@ -155,7 +156,7 @@ solicitar_dia()
 #Faça um programa que mostre ao usuario um menu com 4 opções de operações matemáticas (as básicas, por exemplo). O usuário escolhe uma das opçõoes e o seu programa então pede dois valores numéricos e realiza a operação, mostrando o resultado.
 # ---------------------------------------------------------------------------------------------------------
 
-#Opção 1
+# Opção 1
 
 try:   
   print('---- Operações Matemáticas ----')
@@ -187,7 +188,7 @@ try:
 except:
   print('Digite números inteiros!')
   
-#Opção 2
+# Opção 2
 
 def escolha_num(escolha,num1,num2):    
   if escolha == 1:
@@ -225,10 +226,10 @@ def escolha():
 print(escolha())
   
 # ---------------------------------------------------------------------------------------------------------
-#Faça um programa para verificar se um determinado número inteiro e divisível por 3 ou 5, mas não simultaneamente pelos dois.
+# Faça um programa para verificar se um determinado número inteiro e divisível por 3 ou 5, mas não simultaneamente pelos dois.
 # ---------------------------------------------------------------------------------------------------------
 
-#Opção 1
+# Opção 1
 
 try:  
   num1 = int(input('Digite um número: '))
@@ -244,7 +245,7 @@ try:
 except:
   print('Digite números inteiros!')
 
-#Opção 2
+# Opção 2
 
 def divisivel(num1): 
   if num1 % 3 == 0 and num1 % 5 == 0:
@@ -267,9 +268,9 @@ def solicitar_num():
 
 print(solicitar_num())
   
-#Leia a idade e o tempo de serviço de um trabalhador e escreva se ele pode ou nao se aposentar. As condições para aposentadoria são:  • Ter pelo menos 65 anos, Ou ter trabalhado pelo menos 30 anos, Ou ter pelo menos 60 anos e trabalhado pelo menos 25 anos
+# Leia a idade e o tempo de serviço de um trabalhador e escreva se ele pode ou nao se aposentar. As condições para aposentadoria são:  • Ter pelo menos 65 anos, Ou ter trabalhado pelo menos 30 anos, Ou ter pelo menos 60 anos e trabalhado pelo menos 25 anos
 
-#Oção 1
+# Oção 1
 
 try:
   idade = int(input('Qual a sua idade? '))
@@ -284,7 +285,7 @@ try:
 except:
   print('Digite números inteiros!')
   
-#Opção 2
+# Opção 2
   
 def aposenta_ou_nao(idade,tempo):
   if idade >= 65 or tempo >= 30:
