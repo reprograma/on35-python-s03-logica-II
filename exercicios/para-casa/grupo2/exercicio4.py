@@ -6,14 +6,14 @@ numero2 = int (input("Digite o segundo numero aqui: "))
 calculo = (input("Digite a operação matematica que você deseja executar, considerando: \n + realiza adição \n - realiza subtração \n / realiza divisão \n * realiza multiplicação. \n Escolha a operação matemática:  "))
 
 if calculo == "+":
-    print(f"O resultado é {numero1 + numero2}")
+    print (f"O resultado é {numero1+numero2}")
 if calculo == "-":
-    print(f"O resultado é {numero1 - numero2}")
+    print (f"O resultado é {numero1-numero2}")
 if calculo == "/":
-    print(f"O resultado é {numero1 / numero2}")
+    print (f"O resultado é {numero1/numero2}")
 if calculo == "*":
-    print(f"O resultado é {numero1 * numero2}")
+    print (f"O resultado é {numero1*numero2}")
 else:
-    print("Resultado invalido")
+    print ("Resultado invalido")
 
-print(calculo)
+
