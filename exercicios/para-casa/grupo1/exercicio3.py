@@ -19,7 +19,9 @@ def dias_semana (dia):
     else:
         return("Digite novamente escolhendo opções entre 1 e 7")
     
-dia_escolhido = int(input("Considerando que \n 1 Domingo \n 2 Segunda-feira \n 3 Terça-feira \n 4 Quarta-feira \n 5 Quinta-feira \n 6 Sexta-feira \n 7 Sabado \n Insira o código do dia da semana que deseja visualizar:  "))
+try:
+    dia_escolhido = int(input("Considerando que \n 1 Domingo \n 2 Segunda-feira \n 3 Terça-feira \n 4 Quarta-feira \n 5 Quinta-feira \n 6 Sexta-feira \n 7 Sabado \n Insira o código do dia da semana que deseja visualizar:  "))
 
-print (dias_semana(dia_escolhido))
-
+    print (dias_semana(dia_escolhido))
+except ValueError:
+    print ('Campo incorreto, digite novamente escolhendo opções entre 1 e 7')
