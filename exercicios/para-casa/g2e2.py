@@ -4,17 +4,12 @@
 #não 3 e 5 
 
 def verificadordivisão (numero):
-    if numero % 3 == 0 and numero % 5 == 0:
-        return 'Esse número é divisivel por três e cinco'
-        
-    elif numero % 3 == 0 or numero % 5 != 0:
-        return 'Esse número é divisivel apenas pelo número três'
-    
-    elif numero % 3 != 0 or numero % 5 == 0:
-        return 'Esse número é divisivel apenas pelo número cinco'
+       
+    if (numero % 3 == 0 and numero % 5 != 0) or (numero % 3 != 0 and numero % 5 == 0):
+        return 'Esse número é válido'
     
     else: 
-        return 'Esse número não é divisível por três, nem por cinco'
+        return 'Esse número é inválido'
 
 numero = int(input("Por favor, insira um número:  "))
 print(verificadordivisão(numero))
