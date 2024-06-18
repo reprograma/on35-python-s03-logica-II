@@ -8,6 +8,8 @@ def previdencia():
     tempoDeContribuicao = float(input('Insira o período total, em anos, de contribuição: '))
     identidade_genero = input('Desculpe, mas precisamos solicitar essa informação, pois o regime previdenciário possui regras diferentes para cada gênero.\nVocê se identifica com qual gênero (feminino, masculino ou outros)? ').lower()
 
+    if identidade_genero == 'outros':
+        print('Pedimos desculpas, infelizmente o Brasil ainda não possui legislações que assegurem outras identidades de gênero. Tratando assim cada caso de maneira excepcional, por favor, entre em contato com a agência presencialmente ou ligue 135 para maiores detalhes.')
     if identidade_genero == 'f' or identidade_genero == 'feminino':
         if idade >= 60 and tempoDeContribuicao >= 25:
             print(f"Parábens, com {idade} de idade e {tempoDeContribuicao} anos de contribuição, você já é elegível para se aposentar! Entre em contato com o INSS da sua região :)")
@@ -16,7 +18,7 @@ def previdencia():
                 print(f"Você ainda não está elegível para se aposentar, porque sua idade de {idade} é menor que 60 anos.")
             elif tempoDeContribuicao < 25:
                 print(f"Você ainda não está elegível para se aposentar, porque seu tempo de contribuição {tempoDeContribuicao} é menor que 25 anos.")
-                
+
     elif identidade_genero == 'm' or identidade_genero == 'masculino':
          if idade >= 65 and tempoDeContribuicao >= 30:
               print(f"Parábens, com {idade} de idade e {tempoDeContribuicao} anos de contribuição, você já é elegível para se aposentar! Entre em contato com o INSS da sua região :)")

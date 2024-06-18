@@ -8,7 +8,9 @@ def verificaIdade (idade):
     else:
         return 'Falta mais tempo até você chegar, lá!'
 
-digiteIdade = int(input('Insira sua idade para verificar maioridade: '))
-resultado_idade = verificaIdade(digiteIdade)
-
-print(resultado_idade)
+try:
+    digiteIdade = int(input('Insira sua idade para verificar maioridade: '))
+    resultado_idade = verificaIdade(digiteIdade)
+    print(resultado_idade)
+except ValueError:
+    print("Por favor, insira um número inteiro válido para verificar sua idade.")
