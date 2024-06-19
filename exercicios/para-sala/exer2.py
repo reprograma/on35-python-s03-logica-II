@@ -7,7 +7,7 @@ resposta = input("insira a reposta certa: ")
 if resposta == "a":
     print("Respota Certa!!")
 else:
-     print("resposta Errada")
+     print("resposta Errada!")
 
 
 
