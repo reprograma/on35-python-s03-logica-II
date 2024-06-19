@@ -39,3 +39,26 @@ print(total)
 
 ##* Escreva um programa que leia um inteiro entre 1 e 7 e imprima o dia da semana correspondente a este número. Isto é, domingo se 1, segunda-feira se 2, e assim por diante.
 
+num = int(input("Me diz um outro número, mas agora entre 1 e 7 -> "))
+
+def numero_da_semana(num):
+    if num == 1:
+        return("Esse número corresponde ao dia da semana domingo")
+    elif num == 2:
+        return("Esse número corresponde ao dia da semana segunda-feira")
+    elif num == 3:
+        return("Esse número corresponde ao dia da semana terça-feira")
+    elif num == 4:
+        return("Esse número corresponde ao dia da semana quarta-feira")
+    elif num == 5:
+        return("Esse número corresponde ao dia da semana quinta-feira")
+    elif num == 6:
+        return("Esse número corresponde ao dia da semana sexta-feira")
+    elif num == 7:
+        return("Esse número corresponde ao dia da semana sábado")
+    else:
+        return("Esse número nao vale, tem que ser entre 1 e 7 :/")
+    
+resultado_dia_da_semana = numero_da_semana(num)
+print(resultado_dia_da_semana)
+
