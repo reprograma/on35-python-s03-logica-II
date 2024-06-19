@@ -2,13 +2,16 @@
 
 idade = int(input("Insira sua idade -> "))
 
-if idade >= 18:
-    print("Você é maior de idade, ja pode dirigir e ingerir álcool com moderação :D")
-elif idade < 18:
-    print("Você é menor de idade, cuidado com a vida, ein!")
-else:
-    print("Não estamos te entendendo")
+try:
+    if idade >= 18:
+        print("Você é maior de idade, ja pode dirigir e ingerir álcool com moderação :D")
+    elif idade < 18:
+        print("Você é menor de idade, cuidado com a vida, ein!")
+    else:
+        print("Não estamos te entendendo")
 
+except ValueError:
+    print("Digite um número real, por favor")
 
 
 
