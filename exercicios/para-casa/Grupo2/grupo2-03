@@ -1,0 +1,24 @@
+# Leia a idade e o tempo de serviço de um trabalhador e escreva se ele pode ou nao se aposentar. As condições para aposentadoria são:
+# Ter pelo menos 65 anos,
+# Ou ter trabalhado pelo menos 30 anos,
+# Ou ter pelo menos 60 anos e trabalhado pelo menos 25 anos
+
+def verificar_aposentadoria (idade, tempo_de_servico): 
+ if idade >= 65: 
+  return True 
+ elif tempo_de_servico >= 30: 
+  return True 
+ elif idade >= 60 and tempo_de_servico >= 25: 
+  return True 
+ else:
+  return False 
+ 
+idade = int(input("Digite a idade do trabalhador:"))
+tempo_de_servico = int(input("Digite o tempo de serviço (em anos): "))
+
+pode_aposentar = verificar_aposentadoria(idade, tempo_de_servico)
+
+if pode_aposentar: 
+   print("O trabalhador pose se aposentar.")
+else: 
+   print("O trabalhador ainda não pode se aposentar.")
