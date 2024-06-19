@@ -1,5 +1,4 @@
 #Faça um programa que mostre ao usuario um menu com 4 opções de operações matemáticas (as básicas, por exemplo). O usuário escolhe uma das opçõoes e o seu programa então pede dois valores numéricos e realiza a operação, mostrando o resultado.
-# Função para exibir o menu e obter a escolha do usuário
 def exibir_menu():
     print("Escolha a operação desejada:")
     print("1 - Adição")
@@ -11,7 +10,6 @@ def exibir_menu():
     escolha = input("Digite o número da operação desejada: ")
     return escolha
 
-# Loop principal do programa
 while True:
     opcao = exibir_menu()
 
@@ -20,11 +18,9 @@ while True:
         break
     elif opcao in ['1', '2', '3', '4']:
         try:
-            # Captura os números inseridos pelo usuário
             valor1 = float(input("Digite o primeiro valor: "))
             valor2 = float(input("Digite o segundo valor: "))
 
-            # Realiza a operação correspondente à escolha do usuário
             if opcao == '1':
                 resultado = valor1 + valor2
                 print(f"Resultado da adição: {resultado}")
