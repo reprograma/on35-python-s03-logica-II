@@ -4,17 +4,17 @@
 def dias_semana (dia):
     if dia == int ("1"):
         return ("Esse dia corresponde a Domingo")
-    if dia == int ("2"):
+    elif dia == int ("2"):
         return ("Esse dia corresponde a Segunda")
-    if dia == int ("3"):
+    elif dia == int ("3"):
         return ("Esse dia corresponde a Terça-feira")
-    if dia == int ("4"):
+    elif dia == int ("4"):
         return ("Esse dia corresponde a Quarta-feira")
-    if dia == int ("5"):
+    elif dia == int ("5"):
         return ("Esse dia corresponde a Quinta-feira")
-    if dia == int ("6"):
+    elif dia == int ("6"):
         return ("Esse dia corresponde a Sexta-feira")
-    if dia == int ("7"):
+    elif dia == int ("7"):
         return ("Esse dia corresponde a Sabado")
     else:
         return("Digite novamente escolhendo opções entre 1 e 7")
