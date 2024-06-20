@@ -5,16 +5,16 @@
 
 def aposentadoria(idade,tempo_de_serviço):
     if idade >= 65:
-        return " atende os resquisitos para aposentadoria por idade"
+        return " Atende os resquisitos para aposentadoria por idade"
     elif tempo_de_serviço >= 30:
-        return "atende os resquisitos por tempo de contribuição"
+        return "Atende os resquisitos por tempo de contribuição"
     elif idade >= 60 and tempo_de_serviço >= 25:
-        return "atende ambos requisitos para aponsentadoria "
+        return "Atende ambos requisitos para aponsentadoria "
     else:
         return "Não atende nenhum dos resquisitos para aposentadoria"
 
 
-idade = int(input("Preencha a sua idade: "))
-Tempo_de_serviço = int(input("Preencha seu tempo de contribuição: "))
+idade_contribuinte = int(input("Preencha a sua idade: "))
+tempo_de_contribuição = int(input("Preencha seu tempo de contribuição: "))
 
-print(aposentadoria(idade,Tempo_de_serviço))
+print(aposentadoria(idade_contribuinte,tempo_de_contribuição))

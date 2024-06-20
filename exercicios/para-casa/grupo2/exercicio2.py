@@ -10,5 +10,5 @@ def divisão(numero):
         return f"O número {numero} não atende os critérios"
 
 
-numero = int(input("adicione um número inteiro: "))
-print(divisão(numero))
+numero_inserido = int(input("insira um número inteiro: "))
+print(divisão(numero_inserido))

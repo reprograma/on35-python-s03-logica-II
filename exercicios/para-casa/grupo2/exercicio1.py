@@ -3,16 +3,16 @@ def operacao_matematica(numero1,numero2,escolha):
     
     if escolha == 'adição':
         resultado = numero1 + numero2
-        return f"O resultado da operação é: {resultado}."
+        return f"O resultado da operação é: {resultado}"
     elif escolha == 'subtração':
         resultado = numero1 - numero2
-        return f"O resultado da operação é: {resultado}."
+        return f"O resultado da operação é: {resultado}"
     elif escolha == 'divisão':
-        resultado = numero1 // numero2
-        return f"O resultado da operação é: {resultado}."
+        resultado = numero1 / numero2
+        return f"O resultado da operação é: {resultado}"
     elif escolha == 'multiplicação':
         resultado = numero1 * numero2
-        return f"O resultado da operação é: {resultado}."
+        return f"O resultado da operação é: {resultado}"
     else:
         return "Operação inválida."
 
@@ -21,8 +21,8 @@ print("Opções de operações matematicas:",
       "\n divisão",
       "\n subtração",
       "\n multiplicação")      
-escolha = input("Escolha uma das opções: ").lower()
-numero1 = int(input("Ensira o primeiro número para realizar a operação: "))
-numero2 = int(input("Ensira o segundo número para realizar a operação: "))
+operacao = input("Escolha uma das opções: ").lower()
+primeiro_numero = int(input("Insira o primeiro número para realizar a operação: "))
+segundo_numero = int(input("Insira o segundo número para realizar a operação: "))
 
-print(operacao_matematica(numero1,numero2,escolha))
+print(operacao_matematica(primeiro_numero,segundo_numero,operacao))
