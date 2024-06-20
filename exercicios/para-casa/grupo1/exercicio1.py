@@ -13,8 +13,8 @@ def calculo(numero1,numero2):
     return "Os dois números são iguais e não há diferença entre eles."
 
 
-numero1 = int(input("adicione o primeiro número: "))
-numero2 = int(input("adicione o segundo número: "))
+primeiro_numero = int(input("insira o primeiro número: "))
+segundo_numero = int(input("insira o segundo número: "))
 
-resposta = calculo(numero1,numero2)
+resposta = calculo(primeiro_numero,segundo_numero)
 print(resposta)

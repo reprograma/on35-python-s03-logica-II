@@ -7,11 +7,11 @@ def calculo(numero1,numero2):
     elif  numero2 > numero1:        
         return f"O número {numero2} é maior que o {numero1}."
     else: numero1 == numero2
-    return "Números iguais."
+    return "Os dois números iguais."
 
 
-numero1 = int(input("adicione o primeiro número: "))
-numero2 = int(input("adicione o segundo número: "))
+primeiro_numero = int(input("Insira o primeiro número: "))
+segundo_numero= int(input("Insira o segundo número: "))
 
-resposta = calculo(numero1,numero2)
+resposta = calculo(primeiro_numero,segundo_numero)
 print(resposta)
