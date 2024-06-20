@@ -50,7 +50,7 @@ if irmaos=="sim":
     print("Que legal, também queria ter mais irmãos!") 
 
 elif irmaos=="não":  
-    nao=str(input("Voce gostaria de ter?"))  # aqui deveria colocar a opção caso seja sim ou não?
+    nao=str(input("Voce gostaria de ter?"))  # aqui deveria colocar a opção caso gostaria de ter ou não?
     print("Eu gosto de ser filha única!") 
    
 
