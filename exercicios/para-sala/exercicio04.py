@@ -4,7 +4,7 @@ def tem_irmaos(resposta):
     if resposta == "sim":
         quantos_irmaos = int(input("Que legal! Quantos irmãos você tem? "))
         if quantos_irmaos == 1:
-            return" Que legal, você tem 1 irmão"
+            return f"Que legal, você tem 1 irmão"
         else: 
             return f"Que legal!você tem {quantos_irmaos} irmãos."
               
@@ -16,9 +16,8 @@ def tem_irmaos(resposta):
              return"Obrigada pela resposta"
 
 
-pergunta = input("Você tem irmãos? ").lower()
-print(tem_irmaos(pergunta))
-
+resposta_da_pergunta = input("Você tem irmãos? ").lower()
+print(tem_irmaos(resposta_da_pergunta).lower())
 
 ##Terminou o exercício? Dá uma olhada nessa checklist e confere se tá tudo certinho, combinado?!
 

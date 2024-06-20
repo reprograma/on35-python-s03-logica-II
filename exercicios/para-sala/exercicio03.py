@@ -1,16 +1,16 @@
 ## 3 Faça um programa que peça para o usuário inserir um nome, pergunte se ele gosta do nome e, em ambos os possíveis casos de resposta (Sim ou Não), mostre uma mensagem de sua escolha na tela.
 
-def pergunta(reposta):
+def pergunta(reposta,nome):
 
     if reposta == "sim":
-       return"Que legal! acho seu nome lindo"
+       return f"Que legal! acho o nome {nome} lindo"
     else:
-        return"Que Pena! e como você prefere ser chamada?"
+        return "E como você prefere ser chamada?"
 
 
-input("insira seu nome:")
-resposta_pergunta = input("você gosta do seu nome?").lower()
-print(pergunta(resposta_pergunta))
+nome_inserido = input("Insira seu nome:")
+resposta_pergunta = input("Você gosta do seu nome?").lower()
+print(pergunta(resposta_pergunta,nome_inserido))
 
 
 ##Terminou o exercício? Dá uma olhada nessa checklist e confere se tá tudo certinho, combinado?!

@@ -2,7 +2,7 @@
 
 def capital_do_brasil(resposta):
         
-    if resposta == "c)brasilia" or resposta == "brasilia":
+    if resposta == ("c)brasilia" or resposta == "brasilia"):
        return "Resposta certa"
     elif resposta == "c":
        return "Resposta certa"
@@ -14,11 +14,8 @@ print(" Qual a capital do brasil?",
           "\n a)São Paulo",
           "\n b)Rio de janeiro",
           "\n c)Brasilia")
-
-
-
-resposta = input("Insira sua resposta:  ")
-capital_do_brasil(resposta.lower())
+resposta_usuario = input("Insira sua resposta:  ").lower()
+print(capital_do_brasil(resposta_usuario).lower())
  
 
 

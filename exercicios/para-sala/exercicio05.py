@@ -2,13 +2,13 @@
 
 def pedido(escolha):
 
-    if  escolha == "agua" or pedido == "a)":
+    if  escolha == "agua" or escolha == "a)":
         return "A bebida escolhida foi agua"
-    elif escolha == "suco" or pedido == "b)":
+    elif escolha == "suco" or escolha == "b)":
         return "A bebida escolhida foi suco"
-    elif escolha == "refrigerante" or pedido == "c)":
+    elif escolha == "refrigerante" or escolha == "c)":
         return "A bebida escolhida foi refrigerante"
-    elif escolha == "cerveja" or pedido == "d)":
+    elif escolha == "cerveja" or escolha == "d)":
         return "A bebida escolhida foi cerveja"
     else:
         print("nenhuma bebida escolhida")
@@ -19,8 +19,8 @@ print("Cardapio bebidas",
       "b)suco",
       "C)refrigerante",
       "d)cerveja")
-escolha = input("escolha a bebida de sua preferenica:  ").lower()
-print(pedido(escolha))
+escolha_cardapio = input("escolha a bebida de sua preferenica:  ").lower()
+print(pedido(escolha_cardapio))
 
 ##Terminou o exercício? Dá uma olhada nessa checklist e confere se tá tudo certinho, combinado?!
 
