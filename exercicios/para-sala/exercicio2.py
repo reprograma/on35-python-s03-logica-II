@@ -9,3 +9,4 @@ def calculo(soma):
 
 pergunta_multipla_escolha = input("Quanto é 2 + 2? \n\n A) 0 \n B) 1 \n C) 2 \n D) 4 \n\n")
 resultado = print(calculo(pergunta_multipla_escolha))
+
