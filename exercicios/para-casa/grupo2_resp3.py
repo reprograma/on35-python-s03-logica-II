@@ -1,13 +1,28 @@
-def divisivel():
-    numero=int(input("\nInforme um número inteiro: "))
 
-    if numero % 3 == 0 and numero % 5 == 0:
-        print("\nÉ divisível por 3 e 5.")
-    elif numero % 3 == 0:
-        print(f"É divisível por 3")
-    elif numero % 5 == 0:
-        print("É divisível por 5")
+def divisivel_0(numero):
+
+    return numero % 3 == 0 and numero % 5 == 0
+
+def divisivel_diferente_0(numero):
+
+    return numero % 3 != 0 and numero % 5 != 0
+
+def divisivel_3(numero):
+
+    return numero % 3 == 0 
+
+def divisivel_5(numero):
+
+    return numero % 5 == 0 
+
+num=int(input("\nInforme um número inteiro: "))
+
+if divisivel_0(num):
+    print(f"{num} é divisível por 3 e 5 ao mesmo tempo")
+elif divisivel_diferente_0(num):
+    print(f"{num} não é divisível por 3 e 5 ao mesmo tempo")
+else:
+    if divisivel_3(num):
+        print(f"{num} é divisível por 3")
     else:
-        print("Não é divisivel por 3 ou 5 :(\nTente novamente!")
-
-divisivel()
+        print(f"{num} é divisível por 5")
