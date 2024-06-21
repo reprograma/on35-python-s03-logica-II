@@ -45,10 +45,20 @@ if numero % 5 != 0 or numero % 3 != 0:                            # != diferente
       
 
 
-
 #* Leia a idade e o tempo de serviço de um trabalhador e escreva se ele pode ou nao se aposentar. 
 # As condições para aposentadoria são:
 #  • Ter pelo menos 65 anos,
 # • Ou ter trabalhado pelo menos 30 anos,
 #• Ou ter pelo menos 60 anos e trabalhado pelo menos 25 anos
+
+def aposentadoria (idade, tempo_trabalhado):
+    if idade >= 65 or idade >= 60 and tempo_trabalhado>=25 or tempo_trabalhado>=30: 
+        return "Você já pode se aposentar"
+    else:
+        return "Você ainda não pode se aposentar"
+
+idade= int(input("Digite sua idade: "))
+tempo_trabalhado= int(input("Digite seu tempo trabalhado em anos: "))
+
+print (aposentadoria (idade,tempo_trabalhado))
 
