@@ -29,6 +29,23 @@ print("Resultado: ", resultado)
 #* Faça um programa para verificar se um determinado número inteiro e divisível por 3 ou 5,
 #  mas não simultaneamente pelos dois.
 
+
+numero= int(input("Escolha um número inteiro:"))
+
+if numero % 3 == 0:                                             # % resto da divisão
+    print ("Este número é divisível por 3")
+
+    
+if numero % 5 == 0:
+    print ("Este número é divisível por 5")
+
+
+if numero % 5 != 0 or numero % 3 != 0:                            # != diferente, tudo que não for igual
+    print("Este número não é divisível nem por 3 nem por 5!")
+      
+
+
+
 #* Leia a idade e o tempo de serviço de um trabalhador e escreva se ele pode ou nao se aposentar. 
 # As condições para aposentadoria são:
 #  • Ter pelo menos 65 anos,
